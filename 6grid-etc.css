@@ -1,0 +1,21 @@
+body {
+    background-image: url('../up/one/level/to/image.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+}
+.splash-area {
+    background: linear-gradient(to left top, blue, red);
+}
+.second-splash {
+    background: linear-gradient(45deg blue, rebeccapurple 40%, red);
+    text-shadow: 1px 1px 0 black, -1px -1px 0 black, -1px, 1px 0 black, 1px, -1px 0 black;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: min-content;
+    justify-items: start;
+    align-items: end;
+    column-gap: 2rem;
+}
