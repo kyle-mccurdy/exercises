@@ -18,4 +18,33 @@ body {
     justify-items: start;
     align-items: end;
     column-gap: 2rem;
+    row-gap: 1rem;
+}
+.one-grid-child {
+    justify-self: stretch;
+    align-self: start;
+    place-self: center;
+}
+.another-grid {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-areas: header header header, splash splash splash, first second third, main main sidebar, footer footer footer;
+}
+header {
+    grid-area: header;
+}
+.splash-area {
+    grid-area: splash;
+}
+.parent-el {
+    position: relative; /*--needed to posiiton children--*/
+}
+.positioned-el {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+.positioned-el:hover {
+    transform: scale(1.2);
 }
